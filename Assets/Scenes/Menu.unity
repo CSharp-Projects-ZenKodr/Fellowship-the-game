@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 610265424}
-  clip: {fileID: 8300000, guid: f7305021d2a3e0e4b8dc17fb4b84fad8, type: 3}
+  clip: {fileID: 8300000, guid: 3e9dc877305af43459c0b0c3810ee1d5, type: 3}
 --- !u!1 &972001639
 GameObject:
   m_ObjectHideFlags: 0
