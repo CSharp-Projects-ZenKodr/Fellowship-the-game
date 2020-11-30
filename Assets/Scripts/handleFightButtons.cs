@@ -26,7 +26,7 @@ public class handleFightButtons : MonoBehaviour
     }
     public void PlayGame_Fight3()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
    
 }
