@@ -5,16 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class handleFightButtons : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void BackButton()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.LoadScene(0);
     }
     public void PlayGame_Fight1()
     {
