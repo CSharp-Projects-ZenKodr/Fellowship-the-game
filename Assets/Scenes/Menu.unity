@@ -697,13 +697,13 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 806215633}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1707456877}
+        m_MethodName: ContinueClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -862,6 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fee5173cbc8b9149aedb13d6723b0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
 --- !u!1 &1141175178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fee5173cbc8b9149aedb13d6723b0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 806215632}
 --- !u!1 &2012400321
 GameObject:
   m_ObjectHideFlags: 0
