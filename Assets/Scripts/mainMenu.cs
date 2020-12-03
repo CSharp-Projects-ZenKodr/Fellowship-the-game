@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class mainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Button button;
+    private SavesManager saves;
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        saves = FindObjectOfType<SavesManager>();
+        if(saves != null)
+        {
+            button.interactable = true;
+        }
     }
     public void Exit()
     {
@@ -23,6 +23,14 @@ public class mainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(saves != null)
+        {
+            Object.Destroy(saves);
+        }
+        SceneManager.LoadScene(1);
+    }
+    public void ContinueClick()
+    {
+        SceneManager.LoadScene(1);
     }
 }
