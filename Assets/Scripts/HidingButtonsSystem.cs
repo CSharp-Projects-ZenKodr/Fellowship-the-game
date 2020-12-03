@@ -12,7 +12,7 @@ public class HidingButtonsSystem : MonoBehaviour
     public Button[] buttons = new Button[3];
     private SavesManager saves;
     public static HidingButtonsSystem Instance = null;
-    private void Awake()
+    private void Start()
     {
         if (Instance == null)
             Instance = this;
@@ -39,8 +39,9 @@ public class HidingButtonsSystem : MonoBehaviour
                 buttons[2].interactable = true;
                 break;
             case 3:
-                EditorUtility.DisplayDialog("You won", "Congratulations", "exit");
-                Object.Destroy(saves);
+                Debug.Log("3");
+                saves.Delete();
+                EditorUtility.DisplayDialog("You won", "Congratulations", "Back to menu");
                 SceneManager.LoadScene(0);
                 break;
             default:

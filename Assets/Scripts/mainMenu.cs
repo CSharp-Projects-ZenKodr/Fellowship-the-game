@@ -10,11 +10,12 @@ public class mainMenu : MonoBehaviour
     private SavesManager saves;
     private void Awake()
     {
+        Debug.Log("Start");
         saves = FindObjectOfType<SavesManager>();
-        if(saves != null)
-        {
+        if (saves)
             button.interactable = true;
-        }
+        else
+            button.interactable = false;
     }
     public void Exit()
     {
@@ -23,9 +24,9 @@ public class mainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        if(saves != null)
+        if(saves)
         {
-            Object.Destroy(saves);
+            saves.Delete();
         }
         SceneManager.LoadScene(1);
     }
