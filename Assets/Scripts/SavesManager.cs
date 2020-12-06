@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class SavesManager : MonoBehaviour
@@ -20,9 +19,5 @@ public class SavesManager : MonoBehaviour
     public void Delete()
     {
         Destroy(this.gameObject);
-    }
-    private void OnDestroy()
-    {
-        Debug.Log("Saves deletus");  
     }
 }

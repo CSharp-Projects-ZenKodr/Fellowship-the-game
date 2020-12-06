@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -39,7 +38,6 @@ public class HidingButtonsSystem : MonoBehaviour
                 buttons[2].interactable = true;
                 break;
             case 3:
-                Debug.Log("3");
                 saves.Delete();
                 EditorUtility.DisplayDialog("You won", "Congratulations", "Back to menu");
                 SceneManager.LoadScene(0);

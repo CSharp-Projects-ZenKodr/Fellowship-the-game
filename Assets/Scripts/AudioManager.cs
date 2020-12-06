@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
 		if (Instance == null)
 			Instance = this;
 		else if (Instance != this)
-			Destroy(gameObject);
+			Destroy(this.gameObject);
 		DontDestroyOnLoad(gameObject);
 		source.clip = clip;
 		source.Play();
